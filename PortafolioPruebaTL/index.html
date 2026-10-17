@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f1e7">
+    <title>Mi portafolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 16px;
+            background: #f4f1e7;
+            color: #292820;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header,
+        section {
+            margin-bottom: 28px;
+            padding: 24px;
+            border: 1px solid #e4ddcd;
+            border-radius: 10px;
+            background: #fffdf8;
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .portrait {
+            width: 170px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .profile-link {
+            display: inline-block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: #526b5d;
+            color: white;
+            text-decoration: none;
+        }
+
+        .profile-link:hover {
+            background: #3f5548;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding-top: 8px;
+        }
+
+        footer {
+            color: #68665d;
+            text-align: center;
+        }
+
+        @media (max-width: 520px) {
+            .intro {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="intro">
+            <div>
+                <h1>Hola, soy Samuel</h1>
+                <p>Este es mi primer portafolio. Aquí comparto una foto mía y algunas imágenes de gatos que me gustan.
+                </p>
+                <a class="profile-link" href="https://samthekiller17.github.io/Hojadevidaprueba/" target="_blank"
+                    rel="noopener noreferrer">
+                    Ver mi hoja de vida
+                </a>
+            </div>
+            <img class="portrait" src="Imagenes/WhatsApp%20Image%202026-04-24%20at%201.55.25%20PM.jpeg"
+                alt="Retrato personal">
+        </header>
+
+        <section>
+            <h2>Mis gatos favoritos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQEqDTOP8emufgIMDhxL7p1pnJEy_SE9s_KrErCcL1BaZyeuwIS8S5YZU&s=10"
+                        alt="Gato riéndose">
+                    <figcaption>Gato riéndose</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHf3fh4ZmCOz_dtXNVjjSERs8R40wdLb9BNOUp_NiOwW0YRffXAF6bmBOH&s=10"
+                        alt="Gato dando like">
+                    <figcaption>Gato dando like</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3jzCLgzx0PnW0aQqNbgdyaot7a5JrpJV8cnZlwE3Z6le84bJIr9Ovk5C&s=10"
+                        alt="Gato celoso">
+                    <figcaption>Gato celoso</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9zPXxX97tCkXLe5rbiN47tCI14BStDtpTKjH1LgxYIOcGSpZmyJp-Wjb&s=10"
+                        alt="Gato fachero">
+                    <figcaption>Gato fachero</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVoajCroOyQ3K70zVQgl3eS0RHIcb9YJ_sHSwo7409yLPC25TUWwb_ZW7q&s=10"
+                        alt="Gato tierno">
+                    <figcaption>Gato tierno</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTko9atEmshSkzBrG3yJ6yd-uqV4slo9AaDba1qaBBwQVC-_uUYkw2D7qM&s=10"
+                        alt="Gato del jueves">
+                    <figcaption>Gato del jueves</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.pinimg.com/236x/4e/16/00/4e16005c8d91dc69eb753993e6013299.jpg"
+                        alt="Gato sorprendido">
+                    <figcaption>Gato sorprendido</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPxfY8q97zznCU_8ORUrmfxj3F79Jt35M8hlUqGFL6W79ELjA040rk_7o&s=10"
+                        alt="Gato miedo">
+                    <figcaption>Gato miedo</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <footer>
+            <p>Mi portafolio personal para el futuro</p>
+        </footer>
+    </main>
+</body>
+
+</html>
